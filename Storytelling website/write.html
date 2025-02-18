@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write Content</title>
+    <link rel="stylesheet" href="story.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">Plot Twist Cafe</h1>
+        <nav class="navigation">
+            
+            <a href="Write.html">Start Writing</a>
+            <a href="home.html">Home</a> 
+            
+        </nav>
+    </header>
+
+    <h1 id="avatar-title">Make your Author Avatar</h1>
+    <form>
+        <div class="container">
+            <div class="close">
+                <ion-icon name="close-outline"></ion-icon>
+            </div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            <br><br>
+            <label for="pfp">Profile picture:</label>
+            <input type="file" id="pfp" name="pfp" accept="image/*">
+            <br><br>
+            <label>What Genres do you usually write:</label>
+            <div class="checkbox-container">
+                <input type="checkbox" id="fiction" name="genres" value="fiction">
+                <label for="fiction">Fiction</label>
+
+                <input type="checkbox" id="nonfiction" name="genres" value="non-fiction">
+                <label for="nonfiction">Non-Fiction</label>
+
+                <input type="checkbox" id="mystery" name="genres" value="mystery">
+                <label for="mystery">Mystery</label>
+
+                <input type="checkbox" id="romance" name="genres" value="romance">
+                <label for="romance">Romance</label>
+
+                <input type="checkbox" id="other" name="genres" value="other">
+                <label for="other">Other</label>
+            </div>
+            <br><br>
+            <label for="othergenre">If 'Other', specify:</label>
+            <input type="text" id="othergenre" name="othergenre" placeholder="Enter genre">
+            <br><br>
+            <input type="button" value="Write Stories!" name="submit">
+            <br><br>
+        </div>
+    </form>
+    <script src="script2.js"></script>
+</body>
+</html>

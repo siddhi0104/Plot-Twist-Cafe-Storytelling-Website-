@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plot Twist Cafe</title>
+    <link rel="stylesheet" href="trial.css">
+
+</head>
+<body>
+    <header>
+        <h2 class ="logo" >Plot Twist Cafe</h2>
+        <nav class="navigation">
+            <a href="project.html"></a>
+            <a href="write.html"> Start Writing </a>
+            
+            <button class="btnlogin-popup">Login</button>
+        </nav>
+    </header> 
+
+<div class="wrapper">
+    <div class="close">
+        <ion-icon name="close-outline"></ion-icon>
+    </div>
+    <div class="form-box login">
+        <h2>Login</h2>
+        <form action="login.php" method="post">                           <!--method describes the type of action to be performed once the information is passed to the script.-->
+            <div class="input-box">
+                <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                <input type="email"  required>
+                <label>Email</label>
+                </div>
+                <div class="input-box">
+                <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                <input type="password"  required><label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remember me</label>
+                   <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account?</p><a href="#" class="register-link">Register</a>
+                </div>
+
+        </form>
+    </div>
+
+    <div class="form-box register">
+        <h2>Registration</h2>
+        <form action="#">
+            <div class="input-box">
+                <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                <input type="text" required>
+                <label>Username</label>
+                </div>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                <input type="email" name="email" required>
+                <label>Email</label>
+                </div>
+                <div class="input-box">
+                <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                <input type="password" name="password" required><label>Password</label>
+                </div>
+                
+                <button type="submit" class="btn">Register</button>
+                <div class="login-register">
+                    <p>Already have an account? </p><a href="#" class="login-link">Login</a>
+                </div>
+
+        </form>
+    </div>
+
+    </div>
+
+<!-- stories-->
+<section class="popular-series">
+    <h2>Top 5 Popular Series</h2>
+    <div id="story-container" class="container">
+    <div class="series-container">
+        <img src="https://img.wattpad.com/cover/112709081-256-k876148.jpg" alt="Series 1">
+        <img src="https://img.wattpad.com/cover/313562993-288-k602123.jpg" alt="Series 2">
+        <img src="https://static-cse.canva.com/blob/1396936/1024w-Jp7I2_rOQvc.jpg" alt="Series 3">
+        <img src="https://content.wepik.com/statics/13636424/preview-page0.jpg" alt="Series 4">
+        <img src="https://qph.cf2.quoracdn.net/main-qimg-fe751dee888da5396326f348fa54a84f-lq" alt="Series 5">
+    </div>
+</div>
+</section>
+<script src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

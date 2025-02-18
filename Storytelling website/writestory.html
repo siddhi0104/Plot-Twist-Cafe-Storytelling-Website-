@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write Story</title>
+    <link rel="stylesheet" href="writestory.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">Plot Twist Cafe</h1>
+        <nav class="navigation">
+            <a href="write.html">Back</a> 
+            <a href="Write.html">Start Writing</a>
+            <a href="home.html">Home</a> 
+            
+        </nav>
+    </header>
+    <h2 id="story-title">Write Your Story</h2>
+    <div class="container">
+        <form>
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" placeholder="Title of the story">
+            <br><br>
+            <label>Genres:</label>
+            <div class="checkboxes">
+                <input type="checkbox" id="fiction" name="genres" value="fiction">
+                <label for="fiction">Fiction</label>
+
+                <input type="checkbox" id="nonfiction" name="genres" value="non-fiction">
+                <label for="nonfiction">Non-Fiction</label>
+
+                <input type="checkbox" id="mystery" name="genres" value="mystery">
+                <label for="mystery">Mystery</label>
+
+                <input type="checkbox" id="romance" name="genres" value="romance">
+                <label for="romance">Romance</label>
+
+                <input type="checkbox" id="other" name="genres" value="other">
+                <label for="other">Other</label><br><br>
+            </div>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" placeholder="Write the description of the story"></textarea>
+            <br><br>
+            <label for="audience">Target Audience:</label>
+            <select id="audience" name="audience">
+                <option value="" disabled selected hidden>-- Choose your Primary Audience --</option>
+                <option value="children">Children</option>
+                <option value="young">Young</option>
+                <option value="adult">Adult</option>
+            </select><br><br><br><br>
+
+            <label for="characters">Main Characters:</label>
+            <input type="text" id="characters" name="characters" placeholder="Main characters">
+            <br>
+            <input type="button" value="Submit" name="submit">
+        </form>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var submitButton = document.querySelector('input[name="submit"]');
+            submitButton.addEventListener('click', function() {
+                window.location.href = 'writecontent.html';
+            });
+        });
+    </script>
+</body>
+</html>

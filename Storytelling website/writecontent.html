@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write Content</title>
+    <link rel="stylesheet" href="writecontent.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome CDN -->
+</head>
+<body>
+    <header>
+        <header>
+            <h1 class="logo">Plot Twist Cafe</h1>
+            <nav class="navigation">
+                <a href="write.html">Back</a> 
+                <a href="Write.html">Start Writing</a>
+                <a href="home.html">Home</a> 
+                
+            </nav>
+        </header>
+        <h1 id="w" >Write Your Story</h1>
+    
+    <div class="container">
+        <form>            
+            <hr>
+            <textarea id="content" name="content" rows="20" maxlength="8000" placeholder=" Write your story here (up to 8000 words)"></textarea>
+            <label for="file-upload" class="upload-icon" title="Upload image/video/gif"><i class="fas fa-upload"></i></label> <!-- Upload icon with Font Awesome -->
+            <input type="file" id="file-upload" name="files" multiple accept="video/*,image/*" style="display: none;"> <!-- Hidden file input for uploading multimedia files -->
+            <br><br>
+            <input type="submit" value="Publish" name="publish">
+        </form>
+    </div>
+    <script src="writecontent.js"></script> 
+</body>
+</html>
